@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modification Page</title>
+  </head>
+  <style>
+    body {
+      /* background-color: linear-gradient(to right rgb(34, 15, 15)); */
+      background: linear-gradient(to right, #1a1618, #15100d, #160716, #211e03);
+      text-align: center;
+      color: aliceblue;
+      font-family: Georgia, "Times New Roman", Times, serif;
+    }
+    #bu,
+    button {
+      background-color: rgb(114, 214, 239);
+      color: rgb(18, 27, 27);
+
+      border-radius: 10px;
+      font-size: 20px;
+    }
+    .bu {
+      transition-duration: 0.4s;
+    }
+
+    .bu:hover {
+      background-color: #cbe0eb; /* Green */
+      color: rgb(50, 42, 42);
+    }
+  </style>
+  <body>
+    <h2>Enter the Employee num to update their Name</h2>
+    <br />
+    <form method="post">
+      {% csrf_token %}{{form.as_p}}
+      <input id="bu" type="submit" value="submit" />
+    </form>
+  </body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home Page</title>
+    <style>
+      body {
+        /* background-color: linear-gradient(to right rgb(34, 15, 15)); */
+        background: linear-gradient(
+          to right,
+          #1a1618,
+          #15100d,
+          #160716,
+          #211e03
+        );
+        text-align: center;
+        color: aliceblue;
+        font-family: Georgia, "Times New Roman", Times, serif;
+      }
+      button {
+        background-color: rgb(114, 214, 239);
+        color: rgb(18, 27, 27);
+
+        border-radius: 10px;
+        font-size: 20px;
+      }
+      .bu {
+        transition-duration: 0.4s;
+      }
+
+      .bu:hover {
+        background-color: #cbe0eb; /* Green */
+        color: rgb(50, 42, 42);
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Welcome to Employee Management Application</h1>
+    <h3>This is the Home page!!</h3>
+    <br />
+    <a href="./input"><button class="bu">Add new employee</button></a>
+    <br />
+    <br />
+    <a href="./display"><button class="bu">display Employee details</button></a>
+    <br />
+    <br />
+    <a href="./delete"><button class="bu">delete employee</button></a>
+    <br />
+    <br />
+    <a href="./update"><button class="bu">update employee</button></a>
+    <br />
+    <br />
+  </body>
+</html>
